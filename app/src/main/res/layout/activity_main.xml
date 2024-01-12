@@ -1,42 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
-    android:orientation="vertical" >
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Entar First Name"
-        android:textSize="25dp"/>
-    <EditText
-        android:id="@+id/txtTo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:hint="Entar First Name"/>
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Entar Last Name"
-        android:textSize="25dp"/>
-    <EditText
-        android:id="@+id/txtSub"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Entar Last Name"
-        android:minHeight="48dp"
-        android:layout_marginTop="15dp"/>
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <Button
+    <TextView
+        android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="20dp" />
-</LinearLayout>
+        android:text="Student Name:-"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/ede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:ems="15"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Student Marks:-"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/ede1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Marks"
+        android:ems="10"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"/>
 
+    <Button
+        android:id="@+id/btnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Submit" />
+
+</LinearLayout>
